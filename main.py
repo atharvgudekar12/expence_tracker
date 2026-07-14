@@ -1,28 +1,32 @@
-from expence_tracker import *
+from expense_tracker import *
 
 while True:
-     print("\n========== Expence Tracker ==========")
 
-     print("1 : Add Expence")
-     print("2 : View Expences")
-     print("3 : update Expences")
-     print("4 : Delete Expences")
-     print("5 : Exit")
+    print("\n========== Expense Tracker ==========")
 
-     choice = int(input("Enter your choice : "))
+    print("1. Add Expense")
+    print("2. View Expenses")
+    print("3. Update Expense")
+    print("4. Delete Expense")
+    print("5. Exit")
 
-     if choice == 1:
-          add_expence()
-    
-     elif choice == 2:
-          view_expences()
+    choice = int(input("Enter your choice: "))
 
-     elif choice == 3:
-          update()
+    if choice == 1:
+        add_expense()
 
-     elif choice == 4:
-          delete()
+    elif choice == 2:
+        view_expenses()
 
-     elif choice == 5:
-          print("Thank You")
-          break
+    elif choice == 3:
+        update()
+
+    elif choice == 4:
+        delete_expense()
+
+    elif choice == 5:
+        print("Thank You!")
+        break
+
+    else:
+        print("Invalid Choice.")
